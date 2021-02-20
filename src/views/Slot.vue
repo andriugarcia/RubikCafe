@@ -14,21 +14,24 @@
       v-btn(rounded, outlined, color="primary") Seguir
     .pa-6.mt-12()
       .pl-0.pt-1.font-weight-bold(style="font-size: 1.6em; letter-spacing: -1px") Nombre del Evento
-      v-layout
-        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #Tag
-        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #Tag
-      .overline.mt-4 ACERCA DEL CAFÉ
-      p Lorem ipsum dolor sit amet consectetur adipiscing elit netus quam, tortor nullam vestibulum tincidunt torquent urna dapibus massa, dui per potenti vulputate tellus orci sed mattis. Taciti suspendisse erat rhoncus sollicitudin netus, lacus turpis habitasse consequat facilisi accumsan, ridiculus ad facilisis tristique. Platea rhoncus fusce lobortis vitae est consequat ante pellentesque, facilisi semper sem laoreet suscipit curabitur parturient habitant, vulputate eu posuere a tellus varius ac.
-      .overline ACERCA DE MI
+      .overline.mt-2 ACERCA DE MI
       v-btn.my-2.pr-2.px-0.text-capitalize(text, rounded, @click="$router.push({ path: '/user' })")
-        v-avatar(size="32", style="border: 2px solid #1976d1;")
+        v-avatar(size="42", style="border: 2px solid #1976d1;")
           v-img(src="https://picsum.photos/200")
         .ml-2.font-weight-bold(style="letter-spacing: 0") Username
-      p Diseñadora y User Experience en Rubik Café
-      .px-2
-        v-btn(color="primary lighten-3", block, depressed, rounded, light, @click="$router.push({ path: '/user' })")
-          span.text-capitalize.black--text Ver más cafés 
-    v-card.py-4.px-6(style="border-radius: 24px 24px 0 0; position: absolute; bottom: 0; left: 0; right: 0", color="primary", dark)
+      p.mt-2 Diseñadora y User Experience en Rubik Café
+      .overline SE ME DA BIEN
+      v-layout.mb-4
+        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #UX
+        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #Diseño
+      .overline ME GUSTARÍA APRENDER
+      v-layout.mb-4
+        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #Contabilidad
+        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #Emprendimiento
+      .overline.mt-6 Otros Horarios Disponibles
+      v-btn(color="primary lighten-3", block, depressed, rounded, light, @click="$router.push({ path: '/user' })")
+        span.text-capitalize.black--text Ver otros días
+    v-card.py-4.px-6(style="border-radius: 24px 24px 0 0; position: fixed; bottom: 0; left: 0; right: 0", color="primary", dark)
       v-layout.my-4(style="letter-spacing: 2px")
         .font-weight-bold MAR 13
         span.ml-2 16:30

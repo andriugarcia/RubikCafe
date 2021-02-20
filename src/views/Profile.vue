@@ -28,6 +28,15 @@
           v-icon.black--text fab fa-linkedin
         v-btn.mr-2(icon)
           v-icon.black--text fab fa-twitter
+      .overline.mt-2 SE ME DA BIEN
+      v-layout.mb-4
+        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #UX
+        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #Diseño
+      .overline ME GUSTARÍA APRENDER
+      v-layout.mb-4
+        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #Contabilidad
+        v-chip.white--text.font-weight-bold.mr-2(color="primary", @click.stop="") #Emprendimiento
+      .overline.mt-4 CAFÉS DISPONIBLES
       slot-post.mt-3(v-for="i in 10")
 </template>
 

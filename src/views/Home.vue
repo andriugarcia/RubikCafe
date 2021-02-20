@@ -24,7 +24,7 @@
           .font-weight-bold.mt-2 NUEVO
         .ml-2(v-for="i in 5")
           calendar-event
-    .font-weight-bold.ml-6.mt-4 Martes 15 de Febrero
+    .font-weight-bold.ml-6.mt-4 Martes 13 de Febrero
     slot-post.mx-4.mt-3(v-for="i in 10")
 </template>
 
